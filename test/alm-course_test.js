@@ -27,6 +27,9 @@ exports['welcomeMessage'] = {
     done();
   },
   'all tests': function(test) {
-    //Create your test here!
+    test.equal(alm_course.sum(1,2), 3);
+    test.equal(alm_course.sum("paard", 2), "Two numbers are required");
+
+    test.done();
   },
 };
